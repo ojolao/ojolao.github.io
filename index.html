@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tayo's Portfolio</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+  <script type="text/javascript" src="javascript/scroll.js"></script>
+</head>
+<body>
+    <div class="navbar">
+      <a class="smoothScroll" href="#home">Home</a>
+      <a class="smoothScroll" href="#me">About Me</a>
+      <a class="smoothScroll" href="#projects">Projects</a>
+      <a class="smoothScroll" href="#contact">Contact</a>
+    </div>
+  <section id="home" class="container">
+    <article class="intro">
+      <div> Hi there, my name is Tayo Jolaosho. </div>
+      <div class='typewriter'> I'm a software engineer </div>
+    </article>
+    <div class="learn-more">
+      <a class="smoothScroll" href="#me">Learn more about me 
+        <br>
+        <i class="fa fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+  <section id="me" class="container">
+    <h1>About Me</h1>
+    <p> My name is Tayo Jolaosho. I am a software engineer with a background in anthropology. Fluent in multiple JS frameworks, I am interested in working on innovative technical projects.</p>
+    <p>As a child, I was always called upon by neighbors and family members to repair electronics and program devices, including TVs and VCRs, to function at the right settings. These requests allowed me to cultivate an intuitive grasp of how things can work together that has shaped my ongoing passion for software engineering. I love the transformational capacity that programming affords—being able to move a system through integrative processes that fundamentally shift amorphous or latent ideas into elegant, well-considered implementations. Read more about my projects <a class="smoothScroll" href="#projects">below</a>. </p>
+    <br>
+    <article class="skills">
+      <h1>Technologies and Skills</h1>
+      <br>
+      <br>
+      <div class="icons-group skills">
+        <figure>
+          <img src="img/HTML5_logo.png"> HTML5
+        </figure>
+        <figure>
+          <img src="img/CSS3_logo.png"> CSS
+        </figure>
+        <figure>
+          <img src="img/javascript_logo.png"> JavaScript
+        </figure>
+        <figure>
+          <img src="img/jquery_logo.gif"> jQuery
+        </figure>
+        <figure>
+          <img src="img/React-icon.svg.png"> React
+        </figure>
+        <figure>
+          <img src="img/node-js_logo.png"> Node
+        </figure>
+        <figure>
+          <img src="img/database-mysql-logo.png"> MySQL
+        </figure>
+        <figure>
+          <img src="img/Git-Logo.png"> Git
+        </figure>
+    </article>
+  </section>
+  <section id="projects" class="container">
+    <h1 class="title">PROJECTS</h1>
+    <article class="project">
+      <div class="description">
+        <header class="project-header">
+          <h4>Friend.ly</h4>
+        </header>
+        <p>Friend.ly is an iOS app that allows users to create events and invite friends, who can propose alternative activities and vote on their preferences. It was built using React Native and Redux with Express for Node.js on the backend and MySQL for a relational database. I designed a low-latency live activity feed system by integrating Socket.io with Node/Express and MySQL for bi-directional dynamic messaging and tailored client-side notifications. Integrating the Mailgun API with Node/Express enabled me to develop an expeditious and scalable email customization feature that engages users off the app. Furthermore, I created modular front-end components with React Native for enhanced rendering speed and extensibility. </p>
+       </div>
+       <figure class="project-img">
+        <div class="w3-content w3-display-container">
+          <img class="friendly-slides" src="img/friendly.png" alt="friendly">
+          <img class="friendly-slides" src="img/friendlyCreateEvent.png" alt="friendly">
+          <img class="friendly-slides" src="img/friendlySuggester.png" alt="friendly">
+          <img class="friendly-slides" src="img/friendlyInviteFriends.png" alt="friendly">
+          <img class="friendly-slides" src="img/friendlyLiveFeed.png" alt="friendly">
+        </div>
+        <div class="w3-section" style="text-align:center"> 
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1, 'friendly-slides', 'demo')">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1, 'friendly-slides', 'demo')">&#10095;</div>
+           <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1, 'friendly-slides', 'demo')">1</span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2, 'friendly-slides', 'demo')">2</span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3, 'friendly-slides', 'demo')">3</span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4, 'friendly-slides', 'demo')">4</span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5, 'friendly-slides', 'demo')">5</span>
+        </div>
+       </figure>
+   </article>
+   <article class="project">
+      <figure class="project-img">
+          <img src="img/difftabletframe.png" alt="diff">
+       </figure>
+       <div class="description">
+         <header class="project-header">
+          <h4>Diff</h4>
+         </header>
+          <p>Diff is a responsively designed web app that converts photos of receipts into digital, interactive representations through an OCR algorithm and leveraging of Google's Vision API. The app enables simple and quick calculation of monetary contribution owed by those splitting expenses. Working across the stack, I developed a performant customized email notification system by using the Mailgun API with Node/Express. On the front end, I refactored legacy React code integrating views and view logic into existing components to enhance the app’s intuitive and interactive interface.</p>
+       </div>   
+   </article>
+   <article class="project">
+       <div class="description">
+         <header class="project-header">
+          <h4>Viz.ly</h4>
+          </header>
+          <p>Viz.ly is a data visualizer to help users understand personal trends in their photo collections. It leverages Google’s Vision API for insightful image analysis, which is then powerfully rendered using interactive D3.js charts. I implemented an authentication process using PassportJS and Facebook Login for a simple and secure workflow. I also constructed database schema using MongoDB and Mongoose for efficient data storage and retrieval.</p>
+       </div>
+      <figure class="project-img">
+        <div class="w3-content w3-display-container">
+          <img class="vizly-slides" src="img/viz-ly1.png" alt="viz-ly">
+          <img class="vizly-slides" src="img/viz-lyupload.png" alt="viz-ly">
+          <img class="vizly-slides" src="img/viz-lybarchart.png" alt="viz-ly">
+          <img class="vizly-slides" src="img/viz-lybubblechart.png" alt="viz-ly">
+        </div>
+        <div class="w3-section" style="text-align:center"> 
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1, 'vizly-slides', 'demo1')">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1, 'vizly-slides', 'demo1')">&#10095;</div>
+           <span class="w3-badge demo1 w3-border w3-transparent w3-hover-white" onclick="currentDiv(1, 'vizly-slides', 'demo1')">1</span>
+            <span class="w3-badge demo1 w3-border w3-transparent w3-hover-white" onclick="currentDiv(2, 'vizly-slides', 'demo1')">2</span>
+            <span class="w3-badge demo1 w3-border w3-transparent w3-hover-white" onclick="currentDiv(3, 'vizly-slides', 'demo1')">3</span>
+            <span class="w3-badge demo1 w3-border w3-transparent w3-hover-white" onclick="currentDiv(4, 'vizly-slides', 'demo1')">4</span>
+        </div>
+       </figure>
+
+   </article>
+   <article class="project">
+      <figure class="project-img">
+          <img src="img/FollowUpdesktop.png" alt="follow-up">
+       </figure>
+       <div class="description">
+         <header class="project-header">
+          <h4>Follow Up</h4>
+          </header>
+          <p>Follow Up is a single page web app for prioritizable task management. I built the app using HTML5 to create draggable React components. I also composed a RESTful API using Node with Express and MySQL for data persistence and optimized performance.</p>
+       </div>
+   </article>
+    
+   <footer id="contact" class="container">
+     <h4 class="more-project">Connect with me through:</h4>
+     <div class="social-media">
+      <a href="https://www.linkedin.com/in/omotayo-jolaosho/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+      <a href="https://angel.co/tayo-jolaosho"><i class="fa fa-angellist fa-3x" aria-hidden="true"></i></a>
+      <a href="mailto:ojolao@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+      <a href="https://github.com/ojolao"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+       </div>
+   </footer>
+</section>
+<script type="text/javascript" src="javascript/projectslide.js"></script>
+</body>
+</html>

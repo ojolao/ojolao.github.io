@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+.navbar {
+  position: fixed;
+  top: 0px;
+  background: rgba(0, 0, 0, .2);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  height: 60px;
+  z-index: 100;
+}
+
+.navbar a {
+  float: left;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: lavender;
+}
+
+.navbar .selected, a:hover.selected {
+  background: #DAA520;
+  color: black;
+}
+
+#home {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./img/pen-idea-bulb-paper.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  color:white;
+  opacity: 1;
+  margin: auto;
+  font-size: 36px;
+  text-align: center;
+  width: 50%;
+}
+
+.learn-more {
+  margin: 65px auto;
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+}
+
+.learn-more:hover {
+    color: white;
+}
+
+.learn-more a {
+  text-decoration: none;
+}
+
+/*--- About Me Section ---*/
+
+#me {
+  height: 100%;
+  padding: 3em calc(50% - 450px);
+  background-color: #f1f1f1;
+  text-align: center;
+  overflow: hidden;
+}
+
+#me h1 {
+  border-bottom: solid 2px black;
+  padding-bottom: 5px;
+  display: inline;
+  font-weight: bold;
+}
+
+#me p {
+    line-height: 1.8;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.skills {
+  text-align: center;
+  padding-left: 50px;
+}
+
+.skills img {
+    height: 150px;
+    margin-bottom: 5px;
+    transition: .2s;
+}
+.skills figure {
+    width: 160px;
+    float: left;
+    margin: 15px 10px;
+    font-weight: bold;
+}
+.skills figure:hover img {
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+#projects {
+    padding: 3em calc(50% - 450px);
+    background-color: #31044f;
+    color: white;
+}
+
+#projects .title {
+    text-align: center;
+    font-weight: bold;
+    color: #bdc3c7;
+    
+}
+
+.project {
+    display: flex;
+    margin: 20px 0px;
+    border-bottom: 1px solid white;
+}
+
+.project .description {
+    flex: 1;
+    padding-top: 100px;
+}
+
+.project .project-img {
+    flex: 1;
+}
+
+.project .project-img img {
+    width: 400px;
+}
+
+.project h4 {
+    color: #DAA520;
+}
+
+.project button {
+    padding: 6px 30px;
+    font-size: 15px;
+    border: 2px solid #f1c40f;
+    background-color: #2c3e50;
+    border-radius: 25px;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.project button a {
+    text-decoration: none;
+}
+
+.project button:hover {
+    color: #2c3e50;
+    background-color: white;
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+
+.project header {
+    display: flex;
+}
+
+.project header i {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+@keyframes bounce {
+  0%, 10%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.faa-bounce.animated,
+.faa-bounce.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-bounce {
+  -webkit-animation: bounce 2s ease infinite;
+  animation: bounce 2s ease infinite;
+}
+
+.typewriter  {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer a {
+    margin-left: 30px;
+}
+
+footer a:hover {
+    color: #f1c40f;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.more-project {
+    text-align: center;
+}
