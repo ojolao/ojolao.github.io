@@ -8,7 +8,6 @@
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.min.css'>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascript/smoothscroll.js"></script>
   <script type="text/javascript" src="javascript/scroll.js"></script>
   <script src="typeWriter.min.js"></script>
 </head>
@@ -152,7 +151,17 @@
       <a href="https://github.com/ojolao"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
        </div>
    </footer>
-</section>
+    </section>
 <script type="text/javascript" src="javascript/projectslide.js"></script>
+<script>
+  const links = document.querySelectorAll('.smoothScroll');
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = link.hash.slice(1);
+      smoothScroll(document.getElementById(id));
+    });
+  });
+</script>
 </body>
 </html>
