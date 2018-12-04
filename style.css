@@ -1,5 +1,5 @@
 /* General Demo Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 * {
   margin: 0;
@@ -289,7 +289,7 @@ blockquote:after {
   text-align: center;
   /*display: flex;*/
   /*margin-top: 5em;*/
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./img/img_6410.jpg"); /*pen-idea-bulb-paper_opt*/
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./img/IMG_6410.jpg"); /*pen-idea-bulb-paper_opt*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -734,7 +734,7 @@ blockquote:after {
   display: none;
   position: relative;
   z-index: 2;
-  padding-top: 100px;
+  padding-top: 50px;
   left: 0;
   flex:100%;
   /*top: 3.5em;*/
@@ -760,7 +760,7 @@ blockquote:after {
 .close {
   color: white;
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 25px;
   font-size: 35px;
   font-weight: bold;
@@ -976,6 +976,15 @@ blockquote:after {
   -moz-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
   text-align:left;
+}
+
+.fab { 
+  font-family: 'Font Awesome 5 Brands' !important; 
+  /*font-weight: 900;*/
+}
+
+.fas {
+  font-family: 'Font Awesome\ 5 Free' !important; 
 }
 
 footer {
