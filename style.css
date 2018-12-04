@@ -99,7 +99,7 @@ h1 {
   margin-top: 10em;
   height: 450px;
   width: 100%;
-  background-image: /*linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),*/ url("./img/homebackground.png");
+  background-image: /*linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),*/ url("./img/homebackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -520,13 +520,18 @@ blockquote:after {
 
 #teaching {
   padding: 5.5em /*calc(50% - 450px)*/;
-  /*background-color: plum;*/
   /*overflow: clip;*/
+  /*flex-shrink: 0;*/
+  flex-wrap: wrap;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url("./img/teaching.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+#teaching>* {
+  flex: 1 1 360px;
 }
 
 #teaching p, #teaching ul, #teaching h2 {
@@ -546,6 +551,7 @@ blockquote:after {
 }
 
 #teaching .row {
+  background-color: blue;
   flex-shrink: 0;
   flex-flow: row wrap;
   /*flex-wrap: wrap;*/

@@ -4,7 +4,8 @@
   <title>Tayo Jolaosho | Cultural Anthropologist + Performance Ethnographer</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
   <link rel="stylesheet" href="style.css">
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<!--   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.min.css'>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -55,7 +56,7 @@
     <div class="learn-more">
       <a class="smoothScroll" href="#me">scroll down for Dr. Jolaosho's bio 
         <br>
-        <i class="fa fa-chevron-down"></i>
+        <i class="fas fa-chevron-down"></i>
       </a>
     </div> 
   </section>
@@ -172,22 +173,22 @@
       <div class="overview"><h1>Courses Taught</h1></div>
       <h3> University of South Florida (2015 - Present)</h3>
       <ul>
-        <li> Introduction to the Black Experience In Africa and the Diaspora</li>
-        <li> How #BlackLivesMatter: Precarity and Protest in Global Perspective (Graduate Seminar)</li>
-        <li> Culture and Society in Africa (online)
-        <li> Graduate Seminar on Contemporary Africa </li>
+        <li> "Introduction to the Black Experience In Africa and the Diaspora"</li>
+        <li> "How #BlackLivesMatter: Precarity and Protest in Global Perspective" (Graduate Seminar)</li>
+        <li> "Culture and Society in Africa" (online)
+        <li> "Graduate Seminar on Contemporary Africa" </li>
       </ul>
       <h3> University of California, Merced (2013 - 2015) </h3>
       <ul>
-        <li> Performance, Ritual & Play </li>
-        <li> The Body and Embodiment (Graduate Seminar) </li>
+        <li> "Performance, Ritual & Play" </li>
+        <li> "The Body and Embodiment" (Graduate Seminar) </li>
       </ul>
       <h3> Rutgers University, Dept. of Anthropology (2011 - 2013) </h3>
       <ul>
-        <li> Introduction to Anthropology </li>
-        <li> Anthropology of Performance </li>
-        <li> Ritual, Performance, and Play </li>
-        <li> Visual Anthropology </li>
+        <li> "Introduction to Anthropology" </li>
+        <li> "Anthropology of Performance" </li>
+        <li> "Ritual, Performance, and Play" </li>
+        <li> "Visual Anthropology" </li>
       </ul>
     </div>
   </section>
@@ -510,16 +511,17 @@
     <h1 class="title overview">Digital Anthropology</h1>
     <article class="project performance-card">
       <figure class="project-img">
-        <div class="w3-content w3-display-container">
+        <div>
           <img class="friendly-slides" src="img/freedom-sung/FreedomSungBWLogo.jpg" alt="Freedom Sung Logo">
         </div>
        </figure>
         <div class="description">
         <p> 
+          Coming Soon
+          <br>
+          <br>
           “The Freedom Sung Project” is an interactive exhibit that examines the prominence of dynamically embodied performances—involving the integration of freedom songs with protest dances—within activist collectives for social change in South Africa.  The project draws from  over 1200 photographs and 120 footage hours of unedited interviews and coverage of collective rallies that took place in Johannesburg (2009-2010). These events sought to counter the violence and invisibility experienced by impoverished and politically marginalized communities in their struggles to secure their lives. In the project’s iterations, image, movement, sound, emotions, history, and politics converge. 
-          <br>
-          <br>
-          Site will launch soon
+          
           
           <!-- <a href="" target="_blank">Learn More</a> -->
         </p>
@@ -530,10 +532,10 @@
      <footer id="contact" class="container">
        <h4 class="more-project">Connect with me through:</h4>
        <div class="social-media">
-        <a href="https://www.linkedin.com/in/omotayo-jolaosho/" target='_blank'><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
-        <a href="mailto:ojolao@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/omotayo-jolaosho/" target='_blank'><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a>
+        <a href="mailto:ojolao@gmail.com"><i class="fas fa-envelope fa-3x" aria-hidden="true"></i></a>
         <!--twitter -->
-        <!-- <a href="https://medium.com/@ojolao" target='_blank'><i class="fa fa-medium fa-3x" aria-hidden="true"></i></a>  -->
+        <a href="https://medium.com/@ojolao" target='_blank'><i class="fab fa-medium fa-3x" aria-hidden="true"></i></a> 
          </div>
      </footer>
    </section>
@@ -556,6 +558,7 @@ function openGalleryModal(string) {
   document.getElementById(string).style.display ="none"; //
   document.getElementById('gallery-container').classList.add('flex-wrap');
   document.getElementById(elementID).style.display = "block";
+  document.getElementById(elementID).scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function closeGalleryModal(string) {
@@ -563,7 +566,7 @@ function closeGalleryModal(string) {
   document.getElementById(string).style.display ="block";
   document.getElementById('gallery-container').classList.remove('flex-wrap');
   document.getElementById(elementID).style.display = "none";
-
+  document.getElementById(string).scrollIntoView({ behavior: 'smooth' });
 }
 
 var slideIndex = 1;
