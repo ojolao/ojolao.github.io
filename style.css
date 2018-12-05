@@ -987,15 +987,15 @@ blockquote:after {
   font-family: 'Font Awesome\ 5 Free' !important; 
 }
 
-.fa-linkedin:before {
-  content: "\f23a";
-}
-
-.fa-envelope:before {
+.my-fa-linkedin:before {
   content: "\f08c";
 }
 
-.fa-medium:before {
+.my-fa-envelope:before {
+  content: "\f0e0";
+}
+
+.my-fa-medium:before {
   content: "\f23a";
 }
 
