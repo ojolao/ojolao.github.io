@@ -21,6 +21,7 @@ const smoothScroll = (target) => {
   scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 };
 
+
 $(document).ready(function () {
     //Disable full page
     $("body").on("contextmenu",function(e){
