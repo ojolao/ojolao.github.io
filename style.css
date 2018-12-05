@@ -987,6 +987,18 @@ blockquote:after {
   font-family: 'Font Awesome\ 5 Free' !important; 
 }
 
+.fa-linkedin:before {
+  content: "\f08c";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-medium:before {
+  content: "\f23a";
+}
+
 .my-fa-linkedin:before {
   content: "\f08c";
 }
