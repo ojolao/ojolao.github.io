@@ -774,10 +774,11 @@ blockquote:after {
 .close {
   color: white;
   position: absolute;
-  top: 25px;
+  top: 50px;
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  z-index: 400;
 }
 
 .close:hover,
