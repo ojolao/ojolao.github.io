@@ -630,5 +630,43 @@ function showGallerySlides(string, n) {
         Grid.init();
       });
     </script>
+
+<!-- In memoriam popup -->
+<style>
+  #memorialOverlay{position:fixed;inset:0;z-index:100000;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,.65)}
+  #memorialOverlay.open{display:flex}
+  #memorialBox{position:relative;max-width:480px;width:100%;background:#fff;color:#222;border-radius:6px;padding:36px 28px 28px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.4);font-family:'Open Sans',sans-serif}
+  #memorialBox h2{margin:0 0 12px;font-size:1.5em;font-weight:600}
+  #memorialBox p{margin:0 0 20px;line-height:1.6;font-size:1.05em}
+  #memorialBox a.memorialLink{display:inline-block;padding:10px 22px;background:#222;color:#fff;text-decoration:none;border-radius:4px}
+  #memorialBox a.memorialLink:hover,#memorialBox a.memorialLink:focus{background:#555}
+  #memorialClose{position:absolute;top:6px;right:12px;border:0;background:none;font-size:28px;line-height:1;cursor:pointer;color:#555}
+</style>
+<div id="memorialOverlay" role="dialog" aria-modal="true" aria-labelledby="memorialTitle">
+  <div id="memorialBox">
+    <button id="memorialClose" type="button" aria-label="Close">&times;</button>
+    <h2 id="memorialTitle">In Loving Memory</h2>
+    <p><strong>Dr. Omotayo &ldquo;Tayo&rdquo; Jolaosho</strong><br>August 23, 1985 &ndash; October 22, 2021</p>
+    <p>With deep sadness, we share that Dr. Jolaosho passed away on October 22, 2021. For details and to share memories, please visit:</p>
+    <a class="memorialLink" href="https://rememberingtayo.info/" target="_blank" rel="noopener">rememberingtayo.info</a>
+  </div>
+</div>
+<script>
+(function () {
+  var overlay = document.getElementById('memorialOverlay');
+  var closeBtn = document.getElementById('memorialClose');
+  function close() {
+    overlay.classList.remove('open');
+    try { sessionStorage.setItem('memorialSeen', '1'); } catch (e) {}
+  }
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+  var seen = false;
+  try { seen = sessionStorage.getItem('memorialSeen') === '1'; } catch (e) {}
+  if (!seen) { overlay.classList.add('open'); closeBtn.focus(); }
+})();
+</script>
+
 </body>
 </html>
